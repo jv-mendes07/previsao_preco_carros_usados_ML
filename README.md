@@ -77,4 +77,29 @@ Antes de inicializar a etapa de análise exploratória, é imprescindível ter u
 * **transmission** - Se o carro é manual ou automático
 * **owner** - Quantidade de donos que tal carro já teve anteriormente
 
+Com um dicionário de dados disponível, fiz uma análise exploratória com o objetivo de analisar a relação entre às variáveis preditoras com à variável-alvo **(selling_price)**:
+
+#### (1) Há correlação entre o preço de venda dos carros usados em relação ao ano que foram comprados?
+
+Basicamente, há uma correlação fracamente positiva entre o preço de venda dos carros usados em relação ao ano de compra de tais carros, tal correlação entre tais variáveis é 0.24.
+
+Abaixo, no gráfico de dispersão é possível ver sutilmente que na medida que o ano de compra do carro é mais recente, maior tende à ser o preço de venda de tal carro usado:
+
+![](./img/img_01.png)
+
+Como é observável acima, tal gráfico indica o principal insight de que **quão mais novo é o carro, maior tenderá à ser sua preservação de valor, e logo maior tenderá à ser seu preço de venda em relação à carros antigos (comprados há muito tempo) que tendem à ser mais desvalorizados e terem um preço de venda mais baixo**.
+
+Após obter essa primeira informação, decidi explorar depois essa questão mais à fundo para saber se há tal relação entre o preço de venda dos carros usados e o ano de compra de tais carros:
+
+#### (3) Qual é o preço médio de venda dos carros em relação ao ano de compra de tais carros?
+
+
+
+#### (3) Qual é o preço médio de venda dos carros em relação ao ano de compra de tais carros?
+
+Abaixo, plotei um gráfico de colunas para mostrar o preço médio de venda dos carros usados em relação ao ano de compra de tais carros:
+
+![](./img/img_02.png)
+
+Como é visível, de 2008 em diante houve um aumento significativo no preço médio de venda dos carros usados comprados nestes anos (2008-2018) em relação aos anos anteriores à 2008 (2003-2007), ou seja, tal gráfico confirma que geralmente o preço de venda de carros usados comprados recentemente tende à ser mais caro do que carros comprados há muitos anos atrás.
 

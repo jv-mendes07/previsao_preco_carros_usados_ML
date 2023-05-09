@@ -89,11 +89,11 @@ Abaixo, no gráfico de dispersão é possível ver sutilmente que na medida que 
 
 Como é observável acima, tal gráfico indica o principal insight de que **quão mais novo é o carro, maior tenderá à ser sua preservação de valor, e logo maior tenderá à ser seu preço de venda em relação à carros antigos (comprados há muito tempo) que tendem à ser mais desvalorizados e terem um preço de venda mais baixo**.
 
-Após obter essa primeira informação, decidi explorar depois essa questão mais à fundo para saber se há tal relação entre o preço de venda dos carros usados e o ano de compra de tais carros:
+Após obter essa primeira informação, decidi explorar depois essa questão mais à fundo para saber se tal relação entre o preço de venda dos carros usados e o ano de compra de tais carros se confirma:
 
 #### (3) Qual é o preço médio de venda dos carros em relação ao ano de compra de tais carros?
 
-
+Em média, o preço médio de venda dos carros é 3.711 Lakh, que na **moeda indiana significa que em média o preço médio de venda dos carros usados é de aproximadamente 371 mil rúpias (₹)**
 
 #### (3) Qual é o preço médio de venda dos carros em relação ao ano de compra de tais carros?
 
@@ -101,5 +101,35 @@ Abaixo, plotei um gráfico de colunas para mostrar o preço médio de venda dos 
 
 ![](./img/img_02.png)
 
-Como é visível, de 2008 em diante houve um aumento significativo no preço médio de venda dos carros usados comprados nestes anos (2008-2018) em relação aos anos anteriores à 2008 (2003-2007), ou seja, tal gráfico confirma que geralmente o preço de venda de carros usados comprados recentemente tende à ser mais caro do que carros comprados há muitos anos atrás.
+Como é visível, de 2008 em diante houve um aumento significativo no preço médio de venda dos carros usados comprados nestes anos (2008-2018) em relação aos anos anteriores à 2008 (2003-2007), ou seja, tal gráfico traz mais confirmações de que **geralmente o preço de venda de carros usados comprados recentemente tende à ser mais caro do que carros comprados há muitos anos atrás**.
+
+#### (4) Qual é a diferença média de preço de venda dos carros usados em relação aos mesmos carros novos na concessionária?
+
+Basicamente, a diferença média de preço de venda de carros usados em relação aos mesmos carros novos na concessionária é de aproximadamente -2.413 Lakh, ou seja, **o preço de venda de carros usados tendem em média à se desvalorizarem e terem uma queda de preço em torno de 241 mil rúpias (₹) em relação ao preço dos mesmos carros novos na concessionária**.
+
+#### (5) Tal diferença de preço entre o preço de venda do carro usado e o preço do carro novo na concessionária aumenta ou diminui em dependência do ano de compra do carro?
+
+Para responder tal pergunta, plotei um gráfico de linha que mostra a tendência de queda ou desvalorização no preço de carros usados em relação à tais carros novos na concessionária:
+
+![](./img/img_03.png)
+
+No gráfico acima, somente carros de 2007 que não se desvalorizam tanto em comparação aos preços atuais de tais carros na concessionária, porém **carros de 2003 até 2010 tiveram uma desvalorização significativa de preço em relação aos seus preços atuais na concessionária, já carros comprados posteriormente à 2011 tiveram uma menor desvalorização em relação aos seus preço atuais de concessionária**.
+
+#### (6) Qual é a distribuição estatística do preço de venda dos carros usados?
+
+Tal questão é importante de ser respondida para sabermos se na variável-alvo há outliers que possam dificultar o aprendizado de máquina do modelo de regressão linear.
+
+Abaixo, há um gráfico de distribuição do preço de venda dos carros usados:
+
+![](./img/img_04.png)
+
+Como é observável, a **distribuição do preço de venda dos carros usados é uma distribuição assimétrica à direita, isto significa que a maioria dos carros usados tem um preço inferior ao preço médio de venda (341 mil rúpias (₹)) e isto indica que há outliers em tal variável, ou seja, há vários carros usados que são vendidos à preços astronômicos de 1 milhão de rúpias para cima em comparação ao preço de venda dos demais carros usados**
+
+Tal informação extraída é útil, para que na fase de pré-processamento, tal variável-alvo seja tratada para que tais outliers não afetem prejudicialmente o treinamento e a acurácia preditiva do modelo de regressão linear
+
+Para termos informações mais acuradas sobre a distribuição do preço de venda dos carros usados, decidi retirar os outliers para termos uma visão mais acurada sobre o intervalo do preço de venda mais frequente dos carros usados:
+
+![](./img/img_05.png)
+
+Notavelmente, **a maioria dos carros tem um preço de venda em torno de 100 mil rúpias (1 Lakh (₹)), isto é, a maioria dos carros usados apresentam um preço de venda abaixo da média de preço, que é 341 mil rúpias (3.41 Lakh (₹))**
 

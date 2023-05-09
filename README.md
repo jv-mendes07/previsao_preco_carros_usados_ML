@@ -157,7 +157,7 @@ Visivelmente, é extraído como informação que **o preço médio de venda de c
 
 Há 195 distribuidoras e 106 indivíduos que vendem os carros usados disponíveis em tal dataset, e em média o preço de venda dos carros usados por cada tipo de vendedor é exposto no gráfico de coluna abaixo:
 
-![](./img/img_11.png)
+![](./img/img_10.png)
 
 Em suma, **o preço médio de venda de carros usados ofertados por distribuidoras é em torno de 546 mil rúpias (5.46 Lakh (₹)), enquanto o de vendedores individuais é em torno de 72 mil rúpias (0.72 Lakh (₹)), ou seja, notavelmente dependendo do tipo de vendedor do carro, preço de venda final do carro usado será mais caro ou não**.
 

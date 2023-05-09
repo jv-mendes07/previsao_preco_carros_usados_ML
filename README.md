@@ -131,5 +131,33 @@ Para termos informações mais acuradas sobre a distribuição do preço de vend
 
 ![](./img/img_05.png)
 
-Notavelmente, **a maioria dos carros tem um preço de venda em torno de 100 mil rúpias (1 Lakh (₹)), isto é, a maioria dos carros usados apresentam um preço de venda abaixo da média de preço, que é 341 mil rúpias (3.41 Lakh (₹))**
+Notavelmente, **a maioria dos carros tem um preço de venda em torno de 100 mil rúpias (1 Lakh (₹)), isto é, a maioria dos carros usados apresentam um preço de venda abaixo da média de preço, que é 341 mil rúpias (3.41 Lakh (₹))**.
+
+#### (7) Qual é a distribuição estatística do preço presente dos carros novos em relação ao preço de venda dos carros usados?
+
+Em média, o preço de venda presente de tais carros na concessionária é em torno de 630 mil rúpias (6.30 Lakh (₹)), ou seja, uma diferença de 289 mil rúpias (2.89 Lakh (₹)) em relação ao preço de venda dos carros usados 
+
+Graficamente, a distribuição do preço de venda de carros usados junto ao preço de venda de carros novos na concessionária é exposto abaixo:
+
+![](./img/img_07.png)
+
+Como é visto acima, **a distribuição de preço de venda tanto de carros novos quanto dos carros usados é uma distribuição assimétrica à direita, porém ao mesmo tempo é observado que o preço de venda de carros é sutilmente mais caro em relação ao preço de venda dos carros usados**.
+
+#### (8) Há variação de preço de venda dos carros usados com base no tipo de combustível de tais carros?
+
+Basicamente, 70 % dos carros usados no conjunto de dados são carros que são abastecidos com gasolina, enquanto 30 % são carros usados que são abastecidos à Diesel.
+
+Entretanto, há uma diferença notável no preço médio de venda de carros usados abastecidos com gasolina em relação aos que são abastecidos à Diesel:
+
+![](./img/img_09.png)
+
+Visivelmente, é extraído como informação que **o preço médio de venda de carros usados abastecidos à Diesel é mais caro em comparação à de carros abastecidos com gasolina, enquanto o preço médio de venda de carros usados abastecidos à Diesel é em torno de 693 mil rúpias (6.93 Lakh (₹)), o de carros abastecidos com gasolina é em torno de 300 mil rúpias (3.09 Lakh (₹))**.
+
+#### (10) O preço de venda dos carros usados variam se o vendedor for individual ou uma distribuidora?
+
+Há 195 distribuidoras e 106 indivíduos que vendem os carros usados disponíveis em tal dataset, e em média o preço de venda dos carros usados por cada tipo de vendedor é exposto no gráfico de coluna abaixo:
+
+![](./img/img_11.png)
+
+Em suma, **o preço médio de venda de carros usados ofertados por distribuidoras é em torno de 546 mil rúpias (5.46 Lakh (₹)), enquanto o de vendedores individuais é em torno de 72 mil rúpias (0.72 Lakh (₹)), ou seja, notavelmente dependendo do tipo de vendedor do carro, preço de venda final do carro usado será mais caro ou não**.
 

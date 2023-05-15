@@ -161,3 +161,21 @@ Há 195 distribuidoras e 106 indivíduos que vendem os carros usados disponívei
 
 Em suma, **o preço médio de venda de carros usados ofertados por distribuidoras é em torno de 546 mil rúpias (5.46 Lakh (₹)), enquanto o de vendedores individuais é em torno de 72 mil rúpias (0.72 Lakh (₹)), ou seja, notavelmente dependendo do tipo de vendedor do carro, preço de venda final do carro usado será mais caro ou não**.
 
+#### (11) Qual o preço médio de venda dos carros usados por tipo de transmissão?
+
+Basicamente, dentre os carros usados 86 % são carros manuais e 14 % são de carros automáticos, e em média o preço de tais carros variam em dependência do tipo de transmissão de cada carro:
+
+![](./img/img_11.png)
+
+Em média, o preço de venda dos carros automáticos é de 400 mil rúpias (4.00 Lakh (₹)) e o de carros manuais é de 367 mil rúpias (3.67 Lakh (₹)), ou seja, **em média, o preço de venda dos carros automáticos é mais caro do que o de carros manuais em torno de 67 mil rúpias (0.67 Lakh (₹))**
+
+#### (12) A quantidade de donos anteriores do carro usado demonstram variações no preço de venda? 
+
+Basicamente, tal pergunta é complementar às anteriores para expor como que tais variáveis categóricas influenciam no preço médio de venda de tais carros usados.
+
+Abaixo, há o preço médio de venda de carros usados que não tiveram donos anteriores em relação ao dono atual, em comparação ao preço médio de venda de carros usados que tiveram mais de um dono:
+
+![](./img/img_12.png)
+
+Acima é visível que em média carros usados que tiveram somente um dono **(dono atual)** são mais caros do que carros que tiveram anteriormente mais de um dono ou proprietário, ou seja, **em média, o preço de venda de carros usados que não tiveram historicamente mais de um dono são de 377 mil rúpias (3.77 Lakh (₹)), enquanto o de carros usados que tiveram mais de um dono estão em torno de 197 mil rúpias (1.97 (₹))**
+

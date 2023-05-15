@@ -258,7 +258,45 @@ lin_reg.fit(X_train, y_train_log)
 ```
 ## Avaliação do Modelo:
 
-Depois de treinar o modelo de regressão linear, converti às variáveis que estavam na escala logarítmica em variáveis com suas respectivas escalas originais, e por fim, avaliei a performance do modelo com determinadas métricas de avaliação:
+Depois de treinar o modelo de regressão linear, converti às variáveis que estavam na escala logarítmica em variáveis com suas respectivas escalas originais, e por fim, avaliei a performance do modelo com determinadas métricas de avaliação.
+
+Usei **Cross-Validation** junto com o cálculo do **R-Score** para avaliar a acurácia preditiva do modelo em média:
+
+```
+# R-Score do modelo treinado:
+
+0.9558226317333943
+```
+Pelo resultado acima, **em média o modelo treinado de regressão explica em 95 % às variações nos preços de vendas dos carros usados** (o que é um ótimo resultado).
+
+Calculei o erro médio absoluto do modelo de regressão linear para saber a taxa de erro em média das previsões do modelo em relação aos dados reais da variável-alvo:
+
+```
+Erro Médio Absoluto do modelo de regressão linear:
+
+0.47231193330803317
+```
+Interpretativamente, **em média, a taxa de erro do modelo é de 47 mil rúpias de diferença aproximadamente dos dados previstos em relação aos dados reais de preço de venda dos carros usados** (o que é não tão alto, ao levar em consideração que a maioria dos carros estão acima de 100 mil rúpias)
+
+Por fim, o erro percentual médio do modelo de regressão linear, ou seja, tal métrica fornece informações da % de erro das previsões em relação aos dados reais da variável-alvo:
+
+```
+# Erro percentual médio do modelo de regressão linear treinado:
+
+9.406448828161842
+```
+Ou seja, **em média, às previsões do modelo apresentam uma taxa de erro de 9 % em relação aos dados reais de preço de venda dos carros** (o que é consideravelmente razoável, ao considerar que tal % de erro médio está abaixo de 10 %)
+
+Em suma, o modelo de regressão pelas avaliações acima, obteve uma acurácia preditiva excelente, tanto **(1)** na explicação de variações na variável-alvo, quanto na **(2)** assertividade ou aproximação em relação aos dados reais da variável-alvo
+
+Para finalizar, decidi plotar um gráfico de linha que demonstra a eficácia dos preços previstos pelo modelo de regressão linear em acompanhar os preços reais da variável-alvo:
+
+![](./img/img_15.png)
+
+Graficamente, é observável acima, a eficácia do modelo de regressão linear em realizar previsões de preços que fossem próximas e assertivas em relação aos preços reais de venda dos carros usados, tal gráfico serve para informar e avaliar em mais detalhes a acurácia  do modelo em realizar previsões de preço dos carros usados.
+
+Por fim, considero que tal projeto tenha sido interessante e bem-sucedido o suficiente na construção de um modelo preditivo de regressão, e também respaldo que este modelo poderia ser melhorado com mais ajustes de hiperparâmetros e pré-processamento de dados, porém deixarei essa tarefa para você, haha. Espero que tenha gostado e até a próxima!
+
 
 
 

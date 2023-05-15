@@ -293,9 +293,9 @@ Para finalizar, decidi plotar um gráfico de linha que demonstra a eficácia dos
 
 ![](./img/img_15.png)
 
-Graficamente, é observável acima, a eficácia do modelo de regressão linear em realizar previsões de preços que fossem próximas e assertivas em relação aos preços reais de venda dos carros usados, tal gráfico serve para informar e avaliar em mais detalhes a acurácia  do modelo em realizar previsões de preço dos carros usados.
+Graficamente, é observável acima, a eficácia do modelo de regressão linear em realizar previsões de preços próximas e assertivas em relação aos preços reais de venda dos carros usados, tal gráfico serve para informar e avaliar em mais detalhes a acurácia  do modelo em realizar previsões de preço dos carros usados.
 
-Por fim, considero que tal projeto tenha sido interessante e bem-sucedido o suficiente na construção de um modelo preditivo de regressão, e também respaldo que este modelo poderia ser melhorado com mais ajustes de hiperparâmetros e pré-processamento de dados, porém deixarei essa tarefa para você, haha. Espero que tenha gostado e até a próxima!
+Finalizando, considero que tal projeto tenha sido interessante e bem-sucedido o suficiente na construção de um modelo preditivo de regressão, e também respaldo que este modelo poderia ser melhorado com mais ajustes de hiperparâmetros e pré-processamento de dados, porém deixarei essa tarefa para você **(futuro cientista de dados)**, haha. Espero que tenha gostado e até a próxima!
 
 
 

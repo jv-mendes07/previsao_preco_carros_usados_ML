@@ -276,9 +276,9 @@ Erro Médio Absoluto do modelo de regressão linear:
 
 0.47231193330803317
 ```
-Interpretativamente, **em média, a taxa de erro do modelo é de 47 mil rúpias de diferença aproximadamente dos dados previstos em relação aos dados reais de preço de venda dos carros usados** (o que é não tão alto, ao levar em consideração que a maioria dos carros estão acima de 100 mil rúpias)
+Interpretativamente, **em média, a taxa de erro do modelo é de 47 mil rúpias de diferença dos dados previstos em relação aos dados reais de preço de venda dos carros usados** (o que é não tão alto, ao levar em consideração que a maioria dos carros estão acima de 100 mil rúpias)
 
-Por fim, o erro percentual médio do modelo de regressão linear, ou seja, tal métrica fornece informações da % de erro das previsões em relação aos dados reais da variável-alvo:
+Por fim, calculei o erro percentual médio do modelo de regressão linear, ou seja, tal métrica fornece informações da % de erro das previsões em relação aos dados reais da variável-alvo:
 
 ```
 # Erro percentual médio do modelo de regressão linear treinado:

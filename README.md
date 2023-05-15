@@ -95,8 +95,6 @@ Após obter essa primeira informação, decidi explorar depois essa questão mai
 
 Em média, o preço médio de venda dos carros é 3.711 Lakh, que na **moeda indiana significa que em média o preço médio de venda dos carros usados é de aproximadamente 371 mil rúpias (₹)**
 
-#### (3) Qual é o preço médio de venda dos carros em relação ao ano de compra de tais carros?
-
 Abaixo, plotei um gráfico de colunas para mostrar o preço médio de venda dos carros usados em relação ao ano de compra de tais carros:
 
 ![](./img/img_02.png)
@@ -141,7 +139,7 @@ Graficamente, a distribuição do preço de venda de carros usados junto ao pre�
 
 ![](./img/img_07.png)
 
-Como é visto acima, **a distribuição de preço de venda tanto de carros novos quanto dos carros usados é uma distribuição assimétrica à direita, porém ao mesmo tempo é observado que o preço de venda de carros é sutilmente mais caro em relação ao preço de venda dos carros usados**.
+Como é visto acima, **a distribuição de preço de venda tanto de carros novos quanto dos carros usados é uma distribuição assimétrica à direita, porém ao mesmo tempo é observado que o preço de venda de carros novos é sutilmente mais caro em relação ao preço de venda dos carros usados**.
 
 #### (8) Há variação de preço de venda dos carros usados com base no tipo de combustível de tais carros?
 

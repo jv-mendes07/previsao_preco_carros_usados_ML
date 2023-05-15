@@ -177,3 +177,90 @@ Abaixo, há o preço médio de venda de carros usados que não tiveram donos ant
 
 Acima é visível que em média carros usados que tiveram somente um dono **(dono atual)** são mais caros do que carros que tiveram anteriormente mais de um dono ou proprietário, ou seja, **em média, o preço de venda de carros usados que não tiveram historicamente mais de um dono são de 377 mil rúpias (3.77 Lakh (₹)), enquanto o de carros usados que tiveram mais de um dono estão em torno de 197 mil rúpias (1.97 (₹))**
 
+Na fase de análise exploratória, foi extraído vários insights que demonstram a relação e o impacto que às variáveis preditoras geram na variável-alvo **(selling_price)**, após concluir tal análise, foi necessário começar a fase de **pré-processamento de dados**, que é fase que consiste na preparação e transformação no conjunto de dados, para que tais dados estejam adequados à serem inseridos no modelo preditivo de regressão:
+
+## Pré-processamento de dados:
+
+Nesta fase, excluí a variável 'car_name' por considera-la como uma variável irrelevante ou inapropriada para a construção do modelo que fosse prever o preço de venda de carros usados:
+
+```
+# Exclusão da coluna 'car_name':
+
+df_car_price.drop('car_name', axis = 1, inplace = True)
+```
+
+Depois apliquei **Label Encoding** nas variáveis categóricas, isto é, converti os dados textuais de tais variáveis categóricas em números, para que tais variáveis estivessem adequadas para serem inseridas no modelo de regressão.
+
+Primeiro, transformei a variável 'seller_type':
+
+```
+# A categoria 'Distribuidora' será representada por 0 e 'Individual' por 1:
+
+df_car_price.replace({'seller_type': {'Dealer': 0, 'Individual': 1}}, inplace = True)
+```
+Depois, transformei a variável 'fuel_type':
+
+```
+# A categoria 'Diesel' será representada por 0 e 'Petrol' por 1:
+
+df_car_price.replace({'fuel_type': {'Diesel': 0, 'Petrol': 1}}, inplace = True)
+```
+E por fim, transformei a variável 'transmission':
+
+```
+# A categoria 'Manual' será representada por 0 e 'Automatic' por 1:
+
+df_car_price.replace({'transmission': {'Manual': 0, 'Automatic': 1}}, inplace = True)
+```
+Depois de ter transformado às variáveis categóricas em variáveis numéricas, decidi dividir os dados entre **dados de treino e dados de teste**
+
+#### Dados de Treino & Dados de Teste:
+
+Na variável X, coloquei somente às variáveis preditoras que serão úteis na predição da variável-alvo 'selling_price':
+
+```
+# Variáveis preditoras ou independentes que treinarão o modelo de regressão linear:
+
+X = df_car_price.drop('selling_price', axis = 1).values
+```
+
+Na variável y coloquei somente a variável-alvo que será prevista pelo modelo:
+
+```
+# Variável dependente ou variável-alvo que será prevista pelo modelo:
+
+y = df_car_price['selling_price'].values
+```
+Por fim, antes de separar os dados em dados de treino e dados de teste, decidi aplicar transformação logarítmica na variável preditora 'present_price' com o intuito de diminuir o impacto prejudicial que os outliers de tal variável pudessem gerar no treino do modelo preditivo de regressão
+
+Depois de tal transformação logarítmica, dividi o conjunto de dados em dados de treino e dados de teste:
+
+```
+# Divisão do conjunto de dados em dados de treino e dados de teste:
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, 
+                                                    test_size = 0.2, random_state = 32)
+```
+Acima é visível que 80 % dos dados foram separados para treino e 20 % foram separáveis para teste do modelo de regressão linear.
+
+Com o conjunto de dados separado em treino e teste, decidi novamente aplicar transformação logarítmica, dessa vez, na variável-alvo 'selling_price' com o mesmo fim de diminuir os prejuízos que os outliers pudessem causar no treinamento do modelo preditivo
+
+Concluída toda essa fase entediante de preparação de dados, importei o modelo de regressão linear e comecei a treina-lo:
+
+## Treinamento do Modelo de Regressão Linear:
+
+Importei o modelo LinearRegression() do sklearn e apliquei o método .fit para treinar o modelo sobre o conjunto de dados de treinamento:
+
+```
+# Treino da regressão linear sobre dados de treino:
+
+lin_reg.fit(X_train, y_train_log)
+```
+## Avaliação do Modelo:
+
+Depois de treinar o modelo de regressão linear, converti às variáveis que estavam na escala logarítmica em variáveis com suas respectivas escalas originais, e por fim, avaliei a performance do modelo com determinadas métricas de avaliação:
+
+
+
+
+
